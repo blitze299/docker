@@ -12,7 +12,7 @@ services:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_USER: docker
             MYSQL_PASSWORD: docker
-            MYSQL_DATABASE: docker
+            MYSQL_DATABASE: blitze299
 
     nginx:
         image: nginx:1.10.2
@@ -21,7 +21,7 @@ services:
         restart: always
         volumes:
             - ./nginx/conf:/etc/nginx/conf.d
-            - ~/Projects:/code
+            - ~/code:/www
         links:
             - php
         depends_on:
@@ -34,6 +34,6 @@ services:
         restart: always
         volumes:
             - ./php/conf/php.ini:/usr/local/etc/php/conf.d/custom.ini
-            - ~/Projects:/code
+            - ~/code:/www
         links:
             - mysql
