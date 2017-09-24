@@ -4,7 +4,7 @@ Basic docker box for little projects & tests. I base most of my docker boxes on 
 
 ##  Requirements
 
-- This repo assumes you store your projects in  `~/Projects`.
+- This repo assumes you store your projects in  `~/code`.
 - [Docker](https://docs.docker.com/engine/installation/) installed
 - [Docker Compose](https://docs.docker.com/compose/install/) installed
 
